@@ -1,0 +1,39 @@
+# Aplikasi input data siswa
+
+
+import os
+impott sys
+
+class mahasiswa :
+        nim=' '
+        nama=' '
+
+pilih = 0
+datasiswa = []
+
+def menu() :
+    os.system('cls')
+    print("Menu aplikasi data siswa")
+    print("------------------------------------")
+    print("1. input data siswa")
+    print("2. Tampilkan data siswa")
+    print("3. update data siswa")
+    print("4. Hapus data siswa")
+    print("5. Author")
+    print("6. keluar aplikasi")
+    pilih = int(input(masukan pilihan anda : 
+    if pilih == 1 :
+        pilih1()
+        menu()
+    elif pilih == 2:
+        tampil()
+        input("kembali menu utama")
+        menu()
+    elif pilih == 3:
+        index_update=-1
+        tampil()
+        id_edit = int(input(" input nim yang akan di update "))
+        for a in range(0, len(data siswa)) :
+            if id_edit == datasiswa[a].nim:
+                    index_update = a
+                    break
